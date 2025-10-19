@@ -1,0 +1,129 @@
+body {
+  background: linear-gradient(to bottom right, #ffe6f0, #ffcce5);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  color: #e91e63;
+}
+h1 {
+  font-family: 'Dancing Script', cursive; /* Font nữ tính */
+  font-size: 48px;                        /* Kích thước to nổi bật */
+  color: #e91e63;                         /* Màu hồng đậm */
+  text-align: center;                     /* Căn giữa */
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+h1:hover {
+  text-shadow: 0 0 8px #ff99cc;
+  transition: text-shadow 0.3s ease;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+.card img.qr {
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+}
+.special-card {
+  border: 2px solid #f8a5c2; /* Viền hồng nhẹ */
+}
+/* Nhóm 2 ô đặc biệt ở trên cùng */
+.special-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;               /* Khoảng cách giữa 2 ô */
+  margin-bottom: 50px;     /* Khoảng cách phía dưới */
+  flex-wrap: wrap;
+}
+
+/* Ô ảnh tập thể */
+.special-card.group {
+  background: white;
+  border-radius: 10px;
+  padding: 14px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 480px;            /* To hơn, giữ tỷ lệ ngang */
+}
+
+/* Ô ảnh cô giáo */
+.special-card.teacher {
+  background: white;
+  border-radius: 10px;
+  padding: 14px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 280px;            /* Nhỏ hơn ảnh tập thể */
+}
+
+/* Ảnh trong ô đặc biệt */
+.special-card img {
+  width: 100%;
+  height: auto;            /* Giữ nguyên tỷ lệ ảnh */
+  border-radius: 8px;
+}
+
+/* Tiêu đề (tên) trong ô */
+.special-card h3 {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #e91e63;
+}
+
+/* Câu trích dẫn hoặc lời chúc */
+.special-card .quote {
+  font-style: italic;
+  font-size: 15px;
+  margin-top: 10px;
+  color: #555;
+}
+.quote-link {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 15px;
+  color: #e91e63;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.quote-link:hover {
+  color: #ff4081;
+  text-decoration: underline;
+}
+
+.message-box {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff0f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-size: 16px;
+  line-height: 1.6;
+}

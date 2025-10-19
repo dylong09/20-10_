@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thư gửi Tuyết Nhi</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #fff0f5; padding: 30px; }
+    .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    h2 { color: #d81b60; }
+    #message { display: none; margin-top: 20px; }
+    input[type="password"] { padding: 8px; width: 100%; margin-top: 10px; }
+    button { margin-top: 10px; padding: 10px 20px; background-color: #e91e63; color: white; border: none; border-radius: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Chào Tuyết Nhi 💖</h2>
+    <p>Vui lòng nhập mã bí mật để đọc thư từ những người bạn đặc biệt:</p>
+    <input type="password" id="code" placeholder="Nhập mã...">
+    <button onclick="checkCode()">Mở thư</button>
+
+    <div id="message">
+      <h3>🌸 Tâm thư từ các bạn nam 🌸</h3>
+      <p>
+        Mong Tuyết Nhi luôn đủ dũng cảm để theo đuổi điều mình yêu, và đủ kiên nhẫn để đạt được nó. 💪
+      </p>
+      <p>chúc bà bạn sắp thân đẹp đẹp, vui vui, học giỏi và có 1 năm 12 đầy ý nghĩa</p>
+      <p><strongs>ít lời chúc quá nên buồn hở, oh no đừng khót nháa bởi vì bạn đã có 1 lời chút siu to bự từ tổ ekip nói chung nói riêng là tổ code nha 2h sáng tụi tui còn ngồi code cho mấy bà đó, lo mà cừi đi✨✨</strongs></p>
+    </div>
+  </div>
+
+  <script>
+    function checkCode() {
+      const input = document.getElementById("code").value;
+      const correctCode = "4657"; // Mã bí mật riêng
+      if (input === correctCode) {
+        document.getElementById("message").style.display = "block";
+      } else {
+        alert("eeeee coi chừn cái tay");
+      }
+    }
+  </script>
+</body>
+</html>
